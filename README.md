@@ -3,6 +3,10 @@ logistic-regression
 
 Logistic regression in numpy
 
+References:
+- https://www.coursera.org/specializations/deep-learning
+- https://github.com/alexrudnick/nlp-doodles
+
 Project Organization
 ------------
 
