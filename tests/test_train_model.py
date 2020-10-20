@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from src.models.train_model import (
+from src.models.logistic_regression import (
     sigmoid,
     initialize_with_zeros,
     propagate,
