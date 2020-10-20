@@ -14,7 +14,7 @@ def test_sigmoid():
     assert np.allclose(sigmoid(np.array([0, 2])), np.array([0.5, 0.88079708]))
 
 
-# @pytest.mark.skip
+@pytest.mark.skip
 def test_initialize_zeros():
     dim = 2
     w, b = initialize_with_zeros(dim)
@@ -23,7 +23,7 @@ def test_initialize_zeros():
     assert b == 0
 
 
-# @pytest.mark.skip
+@pytest.mark.skip
 def test_propagate():
     w, b, X, Y = np.array([[1.],[2.]]), 2., np.array([[1.,2.,-1.],[3.,4.,-3.2]]), np.array([[1,0,1]])
     grads, cost = propagate(w, b, X, Y)
@@ -33,7 +33,7 @@ def test_propagate():
     assert np.allclose(cost, 5.801545319394553)
 
 
-# @pytest.mark.skip
+@pytest.mark.skip
 def test_optimize():
     w, b, X, Y = np.array([[1.],[2.]]), 2., np.array([[1.,2.,-1.],[3.,4.,-3.2]]), np.array([[1,0,1]])
     params, grads, costs = optimize(w, b, X, Y, num_iterations= 100, learning_rate = 0.009, print_cost = False)
