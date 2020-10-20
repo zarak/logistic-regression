@@ -12,6 +12,7 @@ def sigmoid(z):
     s -- sigmoid(z)
     """
     # TODO
+
     
     return s
 
@@ -28,6 +29,7 @@ def initialize_with_zeros(dim):
     b -- initialized scalar (corresponds to the bias)
     """
     # TODO
+
 
     assert(w.shape == (dim, 1))
     assert(isinstance(b, float) or isinstance(b, int))
@@ -53,6 +55,8 @@ def propagate(w, b, X, Y):
     """
     
     # TODO
+
+
 
     assert(dw.shape == w.shape)
     assert(db.dtype == float)
@@ -99,6 +103,9 @@ def optimize(w, b, X, Y, num_iterations, learning_rate, print_cost = False):
         # Print the cost every 100 training iterations
         if print_cost and i % 100 == 0:
             print ("Cost after iteration %i: %f" %(i, cost))
+
+    grads = dict(dw=dw, db=db)
+    params = dict(w=w, b=b)
     
     return params, grads, costs
 
